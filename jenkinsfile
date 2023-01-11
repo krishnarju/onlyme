@@ -4,28 +4,13 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-               git branch: 'main', credentialsId: 'krish', url: 'https://github.com/krishnarju/Testapp-1.git'
+               git branch: 'main', credentialsId: 'krish', url: 'https://github.com/krishnarju/onlyme.git'
             }
         }
         stage('build') {
             steps {
                sh 'mvn -B -DskipTests clean package'
             }
-        }
-		stage('Scan') {
-                    parallel {
-       stage('SonarQube analysis') {
-//    def scannerHome = tool 'SonarScanner 4.0';
-        steps{
-        codesonar aid: '', conditions: [], credentialId: 'admin', hubAddress: 'http://34.231.71.62:9000/', projectName: ' petclinic', protocol: 'http', socketTimeoutMS: 0, visibilityFilter: 'yes'
-        withSonarQubeEnv('sonarqube-8.9') { 
-        // If you have configured more than one global server connection, you can specify its name
-//      sh "${scannerHome}/bin/sonar-scanner"
-        sh "mvn clean package -DskipTests sonar:sonar"
-		}
-		}
-    }
-        }
         }
                         
     stage("NexusIQ Scan") {
