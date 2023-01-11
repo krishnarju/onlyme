@@ -15,12 +15,12 @@ pipeline {
         
         
         stage('SonarQube analysis') {
-//    def scannerHome = tool 'SonarScanner 4.0';
         steps{
         withSonarQubeEnv('sonarqube-8.9') { 
-        // If you have configured more than one global server connection, you can specify its name
-//      sh "${scannerHome}/bin/sonar-scanner"
-        sh "mvn sonar:sonar"
+        mvn sonar:sonar \
+  -Dsonar.projectKey=only \
+  -Dsonar.host.url=http://44.198.180.129:9000 \
+  -Dsonar.login=975bb233ff06b96df8cece0c41275f35faf31c88
     }
         }
         }
