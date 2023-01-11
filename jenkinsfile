@@ -17,8 +17,7 @@ pipeline {
         stage('SonarQube analysis') {
         steps{
         withSonarQubeEnv('sonarqube-8.9') { 
-        mvn sonar:sonar   -Dsonar.projectKey=only   -Dsonar.host.url=http://44.198.180.129:9000   -Dsonar.login=975bb233ff06b96df8cece0c41275f35faf31c88
-    }
+        sh "mvn sonar:sonar"
     }
         }
         }
