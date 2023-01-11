@@ -12,9 +12,7 @@ pipeline {
                sh 'mvn -B -DskipTests clean package'
             }
         }
-                        
-
-   } // End of Sonar Scan
+                      
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
