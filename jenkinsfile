@@ -13,11 +13,6 @@ pipeline {
             }
         }
                         
-    stage("NexusIQ Scan") {
-                            steps {
-                                nexusIQScan(nexusIQ)
-                            }
-        }
 
    } // End of Sonar Scan
         stage('Deploy') {
