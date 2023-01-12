@@ -124,14 +124,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Bharath Nexus Repository</name>
-	      <url>http://18.191.233.208:8081/repository/samplewebapplication/</url>
+	      <name>onlyme-release </name>
+	      <url>http://3.231.162.26:8081/repository/onlyme-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Bharath Snapshot Nexus Repository </name>
-	      <url>http://18.191.233.208:8081/repository/samplesnapshot/</url>
+	      <name>onlyme-release Snapshot  Repository </name>
+	      <url>http://3.231.162.26:8081:8081/repository/samplesnapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
