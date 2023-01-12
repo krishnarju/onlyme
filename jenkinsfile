@@ -18,7 +18,7 @@ pipeline {
                    [
                         artifactId: 'spring-petclinic',
                         classifier: '', 
-                        file: 'target/5.1.2', 
+                        file: 'target/spring-petclinic-2.1.1.BUILD-SNAPSHOT.jar', 
                         type: 'jar'
                ]
              ], 
@@ -28,7 +28,7 @@ pipeline {
              nexusVersion: 'nexus3',
              protocol: 'http', 
              repository: 'http://3.231.162.26:8081/repository/onlyme-release',
-             version: '5.1.2'
+             version: 'spring-petclinic-2.1.1.BUILD-SNAPSHOT.jar'
             }
         }
         
