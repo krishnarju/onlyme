@@ -19,7 +19,7 @@ pipeline {
                         artifactId: 'spring-petclinic',
                         classifier: '', 
                         file: 'target/petclinic-2.1.1', 
-                        type: 'war'
+                        type: 'jar'
                ]
              ], 
              credentialsId: 'nexux', 
