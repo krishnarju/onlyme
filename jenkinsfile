@@ -24,7 +24,7 @@ pipeline {
              ], 
              credentialsId: 'nexux', 
              groupId: 'org.springframework.samples', 
-             nexusUrl: '172.31.5.39:8081', 
+             nexusUrl: '3.231.162.26:8081', 
              nexusVersion: 'nexus3',
              protocol: 'http', 
              repository: 'onlyme-release',
