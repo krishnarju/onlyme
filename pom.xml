@@ -125,13 +125,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>onlyme-release </name>
-	      <url>http://3.231.162.26:8081/repository/onlyme-release/</url>
+	      <url>http://34.235.115.134:8081/repository/onlyme-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>onlyme-release Snapshot  Repository </name>
-	      <url>http://3.231.162.26:8081:8081/repository/samplesnapshot/</url>
+	      <url>http://34.235.115.134:8081/repository/samplesnapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
