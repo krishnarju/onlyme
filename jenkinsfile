@@ -24,10 +24,10 @@ pipeline {
              ], 
              credentialsId: 'nexux', 
              groupId: 'org.springframework.samples', 
-             nexusUrl: '3.231.162.26:8081', 
+             nexusUrl: '34.235.115.134:8081', 
              nexusVersion: 'nexus3',
              protocol: 'http', 
-             repository: 'onlyme-release',
+             repository: 'onlyme',
              version: 'spring-petclinic-2.1.1.BUILD-SNAPSHOT.jar'
             }
         }
